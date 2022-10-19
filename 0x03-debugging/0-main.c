@@ -2,7 +2,6 @@
 
 /**
  * main - Test function for positive or negative
- * code written by VincentKimatu
  * Return: 0
  */
 
