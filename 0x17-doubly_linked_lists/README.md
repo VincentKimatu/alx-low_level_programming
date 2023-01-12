@@ -2,7 +2,7 @@
 
 Implementation of C doubly linked lists
 
-## Tests :heavy_check_mark:
+## Tests
 
 - [tests](./tests): Folder of test files.
 
