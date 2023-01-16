@@ -23,3 +23,4 @@
 - [0x0D. C - Preprocessor](./0x0D-preprocessor)
 - [0x0E. C - Structures, typedef](./0x0E-structures_typedef)
 - [0x0F. C - Function pointers](./0x0F-function_pointers)
+- [0x18-dynamic_libraries](0x18-dynamic_libraries)
