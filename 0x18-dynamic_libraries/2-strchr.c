@@ -1,24 +1,21 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-**_strchr - function that locates a character in a string
-*@s: char to fill especify the space of memory
-*@c:received int the limit
-*Return: a pointer to the first ocurrence of character c
-*/
-
+ * _strchr - Entry point
+ * @s: input
+ * @c: input
+ * Return: Always 0 (Success)
+ */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\n')
+	int i;
+
+	for (i = 0; s[i] >= '\0'; i++)
 	{
-		if (*s != c)
-		{
-			s++;
-		}
-		else
-		{
-			return (s);
-		}
+		if (s[i] == c)
+			return (s + i);
 	}
-	return ('\0');
+
+	return (NULL);
 }

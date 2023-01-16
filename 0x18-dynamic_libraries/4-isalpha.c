@@ -1,19 +1,16 @@
 #include "main.h"
-#include <ctype.h>
+
 /**
- *_isalpha - return one if c is lowercase else return zero
+ * _isalpha - Checks if a character is alphabetic.
+ * @c: The character to be checked.
  *
- *Return: 0
- *@c: number for evaluate
+ * Return: 1 if character is letter, lowercase or uppercase, 0 otherwise.
  */
 int _isalpha(int c)
 {
-	if (isalpha(c) != 0)
-	{
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }

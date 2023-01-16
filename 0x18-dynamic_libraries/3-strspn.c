@@ -1,31 +1,34 @@
 #include "main.h"
 
 /**
-*_strspn - function that count ocurrences of first segmen with accept char
-*@s: string of input
-*@accept: characters that should compare with s
-*Return: length of the ocurrrences with the first segment
-*/
-
+ * _strspn - Gets the length of a prefix substring.
+ * @s: The string to be searched.
+ * @accept: The prefix to be measured.
+ *
+ * Return: The number of bytes in s which
+ *         consist only of bytes from accept.
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
-	int length = 0;
+	unsigned int bytes = 0;
+	int index;
 
-	while (*s != ' ')
+	while (*s)
 	{
-		for (i = 0; accept[i] != '\0'; i++)
+		for (index = 0; accept[index]; index++)
 		{
-			if (*s != ' ')
+			if (*s == accept[index])
 			{
-				if (accept[i] == *s)
-				{
-					length++;
-				}
+				bytes++;
+				break;
 			}
 
+			else if (accept[index + 1] == '\0')
+				return (bytes);
 		}
+
 		s++;
 	}
-	return (length);
+
+	return (bytes);
 }
