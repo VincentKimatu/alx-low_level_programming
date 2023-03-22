@@ -25,3 +25,4 @@
 - [0x0F. C - Function pointers](./0x0F-function_pointers)
 - [0x18-dynamic_libraries](0x18-dynamic_libraries)
 - [0x1A-hash_tables](0x1A-hash_tables)
+- [0x1C-makefiles](./0x1C-makefiles)
