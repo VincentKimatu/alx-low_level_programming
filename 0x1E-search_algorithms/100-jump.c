@@ -13,7 +13,8 @@
   * Description: Prints a value every time it is compared in the array.
   *              Uses the square root of the array size as the jump step.
   */
-int jump_search(int *array, size_t size, int value) {
+int jump_search(int *array, size_t size, int value)
+{
 	size_t i, jump, step;
 
 	if (array == NULL || size == 0)
@@ -21,7 +22,8 @@ int jump_search(int *array, size_t size, int value) {
 
 	step = sqrt(size);
 
-	for (i = jump = 0; jump < size && array[jump] < value;){
+	for (i = jump = 0; jump < size && array[jump] < value;)
+	{
 		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
 		i = jump;
 		jump += step;
